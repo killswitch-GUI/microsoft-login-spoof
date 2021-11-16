@@ -22,7 +22,7 @@ function sendData( data ) {
   }
 
   urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
-  XHR.open( 'POST', 'http://127.0.0.1:5000/userdata' );
+  XHR.open( 'POST', '/userdata' );
   XHR.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
   XHR.send( urlEncodedData );
 }
